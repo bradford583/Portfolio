@@ -24,52 +24,58 @@
     
     <main>
       <section id="aboutMe">
-        <!-- h2: Tier-2 Headline (Not as important as the h1 header, but more than one allowed). -->
+        <div><!-- h2: Tier-2 Headline (Not as important as the h1 header, but more than one allowed). -->
         <h2 class="sideBar">About Me</h2>
-          <!-- Image with link -->
-            
           <img src="assets\images\DSC_3858-3.jpg" class="portrait" alt="Chris Bradford" />
-          
         </div>
   
-          <!-- Paragraph with embedded link -->
-          <p class="mainContent">
+        <div class="mainContent">
+          <p>
             Hi! I'm Chris and I am studying to be a full stack web developer! Welcome to my portfolio!
           </p>
-      
+        </div>
       </section>
 
       <section id="myWork">
-        <h2 class="sideBar">Work</h2>
-        <article class="mainContent">
+        <div>
+          <h2 class="sideBar">Work</h2>
+        </div>
+
+        <div class="mainContent">
+          
           <div class="work1">
-            <div class="container-rb">
               <a  href="https://bradford583.github.io/run-buddy/" title ="Run Buddy">
-                <img src="assets\images\hero-bg.jpg"> 
-              </a>
-              <div class="img-text">Run Buddy</div>
-            </div>
+                <img src="assets\images\hero-bg.jpg">
+                </a> 
+              <div class="bottom-left">Run Buddy</div>           
+          </div>
+        
             
           <div class="work2">
-            <a href="https://fortnitetracker.com/profile/all/chrisandurmum"><img src="assets\images\fortnite-logo.jpg"></a>
+            <a href="https://fortnitetracker.com/profile/all/chrisandurmum" title="Fortnite Stats">
+              <img src="assets\images\fortnite-logo.jpg">
+            </a>
+            <div class="bottom-left">Fortnite Stats</div>
           </div>
-        </article>
-        
+
+        </div>
       </section>
       
     
-      <footer>
-        <section id="contactInfo">
+      
+      <section id="contactInfo">
         <h2 class="sideBar">Contact Info</h2>
-        <div>  
-          <ul class="mainContent">
+        <article class="mainContent">
+        <div class="table">
+          <ul id="horizontal-list">
             <li><strong>Email:</strong><a href="mailto:bradford583@gmail.com">bradford583@gmail.com</a></li>
             <li><strong>Github:</strong> <a href="https://github.com/bradford583">bradford583</a></li>
             <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/chris-bradford-bb0a40212/">Chris Bradford</a></li>
           </ul>
         </div>
-      </section>
-      </footer>
+        </article>
+      
+    </section>
     </main>
 
   </body>
