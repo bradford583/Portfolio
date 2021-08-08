@@ -19,6 +19,8 @@ body {
 
 main {
     margin: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -46,7 +48,8 @@ nav a {
 
 
 .portrait {
-    width: 200px;
+    width: 100%;
+    height: auto;
 }
 
 .hero {
@@ -55,36 +58,30 @@ nav a {
 }
 
 section {
-    display: flex;
+    display:flex;
+    flex-direction: row;
 }
 
 .sideBar {
-    width: 200px;
-    display: flex;
+    width: 20%;
 }
 
-#aboutMe {
-    display: flex;
+.footer {
+    left: 0;
+    bottom: 0;
 }
 
 .contact-info {
-    display: flex;
-    justify-content: space-between;
     border: 1px solid var(--tertiary-color)
 }
 
 .mainContent {
     display: flex;
-    display: inline-block;
+    flex-direction: column;
     border-left: 3px solid var(--primary-color);
     margin-left: 50px;
     width: 80%;
     padding-left: 50px;
-}
-
-#myWork {
-    display: flex;
-
 }
 
 .bottom-left {
@@ -102,8 +99,8 @@ section {
 }
 
 .work1 img {
-    width: 800px;
-    height: 400px;
+    width: 100%;
+    height: auto;
     padding: 0;
     border-radius: 15px;
     border: 10px solid var(--secondry-color);
@@ -111,8 +108,8 @@ section {
 }
 
 .work2 img {
-    width: 400px;
-    height:400px;
+    width: 50%;
+    height:auto;
     padding: 0;
     border-radius: 5px;
     border: 5px solid var(--secondry-color);
@@ -124,34 +121,26 @@ section {
     color: var(--primary-color);
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--tertairy-color);
-}
-
 .mainContent li {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-footer a {
-    color: #000000;
-    display: inline;
-}
-
-.table {
-	display: table;   /* Allow the centering to work */
-	margin: 0 auto;
-}
-
-ul#horizontal-list {
-	min-width: 696px;
+.footerContent ul {
 	list-style: none;
-	padding-top: 20px;
-	}
+}
 
-ul#horizontal-list li {
+.footerContent li {
 	display: inline;
-	}
+    color: #000000;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid var(--primary-color);
+    margin-left: 50px;
+    width: 80%;
+    padding-left: 50px;
+}
